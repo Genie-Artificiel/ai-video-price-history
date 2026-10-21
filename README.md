@@ -7,6 +7,7 @@ page on the date it was checked (2026-10-05, or 2026-10-16 for Kling 4.0).
 
 Analysis, charts and method: [AI Video Pricing Since 2024: Same Plan, Less Video](https://www.genie-artificiel.com/en/ai-data/ai-video-price-history/)
 ([French version](https://www.genie-artificiel.com/fr/donnees-ia/evolution-prix-video-ia/)).
+Same files on Hugging Face, with a data viewer: [genie-artificiel/ai-video-price-history](https://huggingface.co/datasets/genie-artificiel/ai-video-price-history).
 
 Tools covered: Runway, Kling AI, Luma Dream Machine, Hailuo AI (MiniMax), Pika, Vidu and PixVerse (video
 generators); Synthesia, HeyGen, Colossyan and D-ID (avatar video); ElevenLabs, Murf and Descript (voice);
