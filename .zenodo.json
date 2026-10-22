@@ -1,0 +1,39 @@
+{
+  "upload_type": "dataset",
+  "title": "AI video, avatar and voice tool pricing history (2024-2026)",
+  "description": "<p>128 observations of the cheapest paid plans of 15 AI video, avatar and voice tools (Runway, Kling AI, Luma Dream Machine, Hailuo AI (MiniMax), Pika, Vidu, PixVerse, InVideo AI, Synthesia, HeyGen, Colossyan, D-ID, ElevenLabs, Murf, Descript), from 2024-05-20 to 2026-10-16, read from their official pricing pages archived by the Wayback Machine, then from the live pages: monthly and annual price, included quota, newest model, seconds or minutes produced per month, credit conversion, confidence level (high, medium or low) and source URL. Column dictionary in English and French included; free-text cells are in French.</p><p>Costs per second are implied subscription rates calculated from the vendors' figures, not API prices. Method, charts and limits: <a href=\"https://www.genie-artificiel.com/en/ai-data/ai-video-price-history/\">AI Video Pricing Since 2024: Same Plan, Less Video</a>.</p><p>License CC BY 4.0: credit \"Source: genie-artificiel.com\" with a link to the study page and to the license.</p>",
+  "creators": [
+    {
+      "name": "Génie Artificiel"
+    }
+  ],
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "version": "2026.10.20",
+  "language": "eng",
+  "keywords": [
+    "AI video pricing",
+    "AI video generator",
+    "text-to-video",
+    "AI avatars",
+    "AI voice",
+    "text to speech",
+    "credits",
+    "price history",
+    "Wayback Machine"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://www.genie-artificiel.com/en/ai-data/ai-video-price-history/",
+      "relation": "isDocumentedBy"
+    },
+    {
+      "identifier": "https://www.genie-artificiel.com/fr/donnees-ia/evolution-prix-video-ia/",
+      "relation": "isDocumentedBy"
+    },
+    {
+      "identifier": "https://huggingface.co/datasets/genie-artificiel/ai-video-price-history",
+      "relation": "isIdenticalTo"
+    }
+  ]
+}

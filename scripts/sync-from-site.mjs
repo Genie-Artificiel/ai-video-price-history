@@ -3,7 +3,7 @@
 //
 // The site builds both CSV files from its own sources into site/dist/media/donnees/. This script copies them
 // here when they changed, regenerates the stats block of README.md, then checks every document it is given
-// (README.md and CITATION.cff, plus any extra path) against the data: observation and tool counts, date range,
+// (README.md, CITATION.cff and .zenodo.json, plus any extra path) against the data: observation and tool counts, date range,
 // tool names, and no affiliate vocabulary or /go/ links. Plain Node (22+), no dependencies.
 //
 //   node scripts/sync-from-site.mjs                 copy changed files, update the stats block, check the docs
@@ -146,7 +146,9 @@ if (existsSync(readmePath)) {
 const citationPath = join(ROOT, 'CITATION.cff');
 const version = existsSync(citationPath) ? readFileSync(citationPath, 'utf8').match(/^version: "?([\d.]+)"?$/m)?.[1] : null;
 if (!version) problems.push('CITATION.cff: version not found');
-for (const doc of [readmePath, citationPath, ...extraDocs]) {
+const zenodoPath = join(ROOT, '.zenodo.json');
+if (existsSync(zenodoPath)) try { JSON.parse(readFileSync(zenodoPath, 'utf8')); } catch (e) { problems.push(`.zenodo.json: invalid JSON (${e.message})`); }
+for (const doc of [readmePath, citationPath, ...(existsSync(zenodoPath) ? [zenodoPath] : []), ...extraDocs]) {
   if (!existsSync(doc)) { problems.push(`${rel(doc)} not found`); continue; }
   const text = readFileSync(doc, 'utf8');
   const name = rel(doc);
