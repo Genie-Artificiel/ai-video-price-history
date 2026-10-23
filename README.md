@@ -1,5 +1,7 @@
 # AI video, avatar and voice tool pricing history (2024-2026)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23582450.svg)](https://doi.org/10.5281/zenodo.23582450)
+
 What the cheapest paid plans of 15 AI video, avatar and voice tools cost, and how many seconds or minutes of
 output they buy each month, from 2024-05-20 to 2026-10-16. Each row is one plan on one date, read from the
 vendor's official pricing page as archived by the [Wayback Machine](https://web.archive.org/), or from the live
@@ -160,7 +162,9 @@ after Gen-4.5's price cut (2026-06-29 capture). Each of these rows links to its 
 ## Updates and versions
 
 The dataset is updated every quarter on the site, then mirrored here with `node scripts/sync-from-site.mjs`.
-Versions are tagged `vYYYY.MM.DD`, the date the data file last changed; the current version is 2026.10.20.
+Versions are tagged `vYYYY.MM.DD`, the date the data file last changed; the current version is 2026.10.20. Each
+release is archived on Zenodo with its own DOI; [10.5281/zenodo.23582450](https://doi.org/10.5281/zenodo.23582450)
+always points to the latest version.
 
 Spotted an error or a better capture? Open an issue or email contact@genie-artificiel.com.
 
@@ -177,4 +181,6 @@ their owners' property.
 See [CITATION.cff](CITATION.cff) ("Cite this repository" on GitHub), or:
 
 > Génie Artificiel (2026). *AI video, avatar and voice tool pricing history (2024-2026)* (version 2026.10.20)
-> [Data set]. https://www.genie-artificiel.com/en/ai-data/ai-video-price-history/
+> [Data set]. Zenodo. https://doi.org/10.5281/zenodo.23582451
+
+Study page: https://www.genie-artificiel.com/en/ai-data/ai-video-price-history/

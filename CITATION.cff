@@ -17,6 +17,14 @@ authors:
     email: contact@genie-artificiel.com
 version: "2026.10.20"
 date-released: 2026-10-20
+doi: 10.5281/zenodo.23582450
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23582450
+    description: Zenodo concept DOI (all versions)
+  - type: doi
+    value: 10.5281/zenodo.23582451
+    description: Zenodo DOI of version 2026.10.20
 license: CC-BY-4.0
 url: "https://www.genie-artificiel.com/en/ai-data/ai-video-price-history/"
 repository-code: "https://github.com/Genie-Artificiel/ai-video-price-history"
